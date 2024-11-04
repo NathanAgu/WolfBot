@@ -9,7 +9,6 @@ bot.commands = new Discord.Collection()
 bot.login(config.token)
 loadCommands(bot)
 
-
 bot.on("messageCreate", async message => {
     if (message.content === ".ping") return bot.commands.get("ping").run(bot, message)
 })
