@@ -27,5 +27,5 @@ module.exports = async bot => {
 
     await rest.put(Routes.applicationCommands(bot.user.id), {body: commands})
 
-    console.log("Les SlashCommands ont été créées avec succès !")
+    console.log("[+] SlashCommands : Créées !")
 }

@@ -5,9 +5,9 @@ module.exports = async bot => {
 
         let command = require(`../Commands/${file}`)
 
-        if (!command.name || typeof command.name !== "string") throw new TypeError(`La commande ${file} n'a pas de nom !`)
+        if (!command.name || typeof command.name !== "string") throw new TypeError(`[-] ${file} : Erreur !`)
             
         bot.commands.set(command.name, command)
-        console.log(`Commande ${file} chargée avec succès !`)
+        console.log(`[+] ${file} : Succès !`)
     })
 }
