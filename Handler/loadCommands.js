@@ -6,7 +6,7 @@ module.exports = async bot => {
         let command = require(`../Commands/${file}`)
 
         if (!command.name || typeof command.name !== "string") throw new TypeError(`[-] ${file} : Erreur !`)
-            
+
         bot.commands.set(command.name, command)
         console.log(`[+] ${file} : Succès !`)
     })
