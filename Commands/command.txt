@@ -1,0 +1,15 @@
+const Discord = require("discord.js")
+
+module.exports = {
+
+    name: "",           // String
+    description: "",    // String
+    permission: "",     // Sting || Discord.PermissionFlagsBits. PERM
+    dm: ,               // Boolean
+
+    async run(bot, message, args) {
+        await message.reply("")
+    }
+}
+
+// Base d'une commande
